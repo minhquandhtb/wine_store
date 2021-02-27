@@ -1,0 +1,9 @@
+.big-product {
+  height: 1100px;
+  .home-page-sale-bg {
+    position: relative;
+    > img {
+      width: 100%;
+    }
+  }
+}

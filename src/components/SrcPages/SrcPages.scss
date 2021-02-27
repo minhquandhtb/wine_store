@@ -1,0 +1,29 @@
+.src-pages {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  > ul {
+    margin: 5px 0px;
+    > li {
+      display: inline;
+      font-size: 12px;
+      font-family: "Times New Roman", Times, serif;
+      color: black;
+      > span {
+        margin: 0px 10px;
+      }
+      > a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      > a.current {
+        color: orange;
+      }
+    }
+    > li:hover {
+      > a {
+        color: orange;
+      }
+    }
+  }
+}

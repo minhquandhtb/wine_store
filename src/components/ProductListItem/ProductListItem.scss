@@ -1,0 +1,45 @@
+a.product-list-item {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  padding: 0px 15px;
+  .product-content {
+    .text {
+      color: gray;
+    }
+    .title {
+      color: black;
+    }
+    .price {
+      display: inline;
+      font-family: "Times New Roman", Times, serif;
+      font-size: xx-large;
+      color: orange;
+    }
+    .original {
+      display: inline;
+      text-decoration: line-through;
+      font-size: small;
+      color: grey;
+    }
+    sup {
+      display: inline;
+      color: grey;
+    }
+    > .btn-wrapper {
+      font-size: medium;
+      color: gray;
+
+      > * {
+        margin-right: 20px;
+        span {
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+a.product-list-item:hover {
+  .title {
+    color: orange;
+  }
+}

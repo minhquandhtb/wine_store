@@ -1,0 +1,23 @@
+.gallery {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 1rem;
+  .gallery-item {
+    position: relative;
+    .gallery-image-hover {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+    }
+    .gallery-image {
+      width: 100%;
+    }
+  }
+  .gallery-item:hover {
+    .gallery-image-hover {
+      display: block;
+      border: 2px solid orange;
+    }
+  }
+}

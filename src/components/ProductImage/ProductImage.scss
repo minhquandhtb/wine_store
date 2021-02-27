@@ -1,0 +1,12 @@
+.product-image {
+  position: relative;
+  > .img {
+    width: 100%;
+    padding: 0px;
+  }
+  .tag {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+}

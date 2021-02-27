@@ -1,0 +1,39 @@
+.sale-product {
+  position: absolute;
+  top: 50%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: white;
+  height: 500px;
+  font-family: "Times New Roman", Times, serif;
+  .product-description {
+    > * {
+      margin: 10px 0px;
+    }
+    > p.price {
+      font-size: xx-large;
+      color: orange;
+    }
+    table {
+      width: 100%;
+      border: solid 1px orange;
+    }
+
+    td {
+      border: solid 1px orange;
+
+      width: 50%;
+      font-size: x-large;
+      color: orange;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      > p {
+        margin-bottom: 0px;
+      }
+      > span {
+        font-size: large;
+      }
+    }
+  }
+}

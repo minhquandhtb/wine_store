@@ -1,0 +1,42 @@
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  border: 1px solid gray;
+  padding: 0px 10px;
+  a {
+    > i {
+      margin-right: 1rem;
+      color: gray;
+    }
+    > i:hover {
+      color: orange;
+    }
+  }
+
+  .pagination {
+    display: inline-block;
+    color: gray;
+    > * {
+      margin: 0px 5px;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      color: gray;
+      padding: 2px;
+    }
+    button:hover {
+      color: orange;
+    }
+
+    button:disabled {
+      color: rgb(200, 200, 200);
+    }
+    button.active {
+      color: orange;
+    }
+  }
+}

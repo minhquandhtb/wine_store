@@ -1,0 +1,16 @@
+.category {
+  > ul {
+    > li {
+      list-style: none;
+      cursor: pointer;
+      color: gray;
+      font-size: medium;
+    }
+    > li:hover {
+      color: orange;
+    }
+    > li.active {
+      color: orange;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.nav-bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #f8f9fa30;
+  &__menu {
+    display: flex;
+    justify-content: center;
+    span {
+      margin: 0px 10px;
+    }
+    ul {
+      margin: 5px 0px;
+    }
+    li {
+      display: inline;
+      font-size: 12px;
+      font-family: "Times New Roman", Times, serif;
+      color: white;
+      > a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    li:hover {
+      > a {
+        color: orange;
+      }
+    }
+  }
+  &__search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+    color: white;
+
+    form {
+      input {
+        border-width: 0px 0px 0px 2px;
+        padding-left: 10px;
+
+        background-color: transparent;
+        border-color: white;
+
+        &::placeholder {
+          font-style: italic;
+        }
+      }
+      button {
+        border: none;
+
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+}

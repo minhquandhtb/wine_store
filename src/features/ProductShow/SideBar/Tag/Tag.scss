@@ -1,0 +1,15 @@
+.tag {
+  margin-bottom: 15px;
+  button {
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 5px;
+  }
+  button:hover {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+  }
+}
