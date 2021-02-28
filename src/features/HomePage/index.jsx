@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "reactstrap";
 import BigProduct from "./BigProduct/BigProduct";
 import Customer from "./Customer/Customer";
 import Gallery from "./Gallery/Gallery";
@@ -9,6 +8,7 @@ import NewsAndBlog from "./NewsAndBlog/NewsAndBlog";
 import SlideProduct from "./SlideProduct/SlideProduct";
 import Title from "components/Title/Title";
 import { useSelector } from "react-redux";
+import { Container, Grid } from "@material-ui/core";
 
 function HomePage() {
   const [error, setError] = useState(null);
@@ -36,45 +36,43 @@ function HomePage() {
     return <div>Loading...</div>;
   } else {
     return (
-      <Container className="home-page" fluid={true}>
-        <Row>
+      <Grid
+        container
+        direction="column"
+        alignItems="center"
+        className="home-page"
+        spacing={0}
+      >
+        <Grid item>
           <Introduction />
-        </Row>
-        <Row>
+        </Grid>
+        <Grid item>
           <BigProduct />
-        </Row>
-        <Row>
-          <Col>
-            <Title title="SẢN PHẨM MỚI" />
-          </Col>
-        </Row>
-        <Row>
+        </Grid>
+        <Grid item>
+          <Title title="SẢN PHẨM MỚI" />
           <SlideProduct products={products} />
-        </Row>
-        <Row>
+        </Grid>
+        <Grid item>
           <Gallery />
-        </Row>
-        <Row>
-          <Col>
-            <Title title="SẢN PHẨM BÁN CHẠY" />
-          </Col>
-        </Row>
-        <Row>
+        </Grid>
+        <Grid item>
+          <Title title="SẢN PHẨM BÁN CHẠY" />
           <SlideProduct products={products} />
-        </Row>
-        <Row>
+        </Grid>
+        <Grid item>
           <Container>
-            <Row>
-              <Col xs="8">
+            <Grid container>
+              <Grid item xs={8}>
                 <NewsAndBlog />
-              </Col>
-              <Col xs="4">
+              </Grid>
+              <Grid item xs={4}>
                 <Customer />
-              </Col>
-            </Row>
+              </Grid>
+            </Grid>
           </Container>
-        </Row>
-      </Container>
+        </Grid>
+      </Grid>
     );
   }
 }

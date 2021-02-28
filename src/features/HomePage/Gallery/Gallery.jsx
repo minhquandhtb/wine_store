@@ -1,20 +1,20 @@
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
 import "./Gallery.scss";
 import GalleryItem from "./GalleryItem";
 import { GALLERY_IMAGES } from "constants/images";
+import { Grid } from "@material-ui/core";
 
 function Gallery() {
   const mapGalleryImages = GALLERY_IMAGES.map((e, i) => (
-    <Col key={i} xs="3">
+    <Grid item key={i} xs="3">
       <GalleryItem src={e} />
-    </Col>
+    </Grid>
   ));
 
   return (
-    <Container className="gallery" fluid={true}>
-      <Row className="no-gutters">{mapGalleryImages}</Row>
-    </Container>
+    <Grid container className="gallery">
+      {mapGalleryImages}
+    </Grid>
   );
 }
 

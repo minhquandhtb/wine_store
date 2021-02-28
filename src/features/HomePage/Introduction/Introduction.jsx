@@ -1,18 +1,16 @@
+import { Container, Grid } from "@material-ui/core";
 import Button from "components/Button/Button";
 import Title from "components/Title/Title";
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
 import "./Introduction.scss";
 function Introduction() {
   return (
     <Container className="introduction">
-      <Row className="justify-content-center">
-        <Col xs="2">
+      <Grid container direction="column" alignItems="center">
+        <Grid item>
           <Title title="GIỚI THIỆU" />
-        </Col>
-      </Row>
-      <Row className="justify-content-center">
-        <Col xs="10">
+        </Grid>
+        <Grid item xs={10} justify="center">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias
             veniam, ex rem mollitia assumenda odio enim incidunt architecto?
@@ -23,13 +21,11 @@ function Introduction() {
             adipisci, consequuntur perferendis odio earum commodi reiciendis
             mollitia.
           </p>
-        </Col>
-      </Row>
-      <Row className="justify-content-center">
-        <Col xs="2">
+        </Grid>
+        <Grid item>
           <Button className="center-block" color="black" text="XEM THÊM" />
-        </Col>
-      </Row>
+        </Grid>
+      </Grid>
     </Container>
   );
 }

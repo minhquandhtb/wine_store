@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import { Container } from "reactstrap";
 import "react-multi-carousel/lib/styles.css";
 import Product from "components/Product/Product";
 import "./SlideProduct.scss";
+import { Container } from "@material-ui/core";
 
 const SlideProduct = ({ products }) => {
   const productList = products.map((e, i) => (
@@ -40,7 +40,7 @@ const SlideProduct = ({ products }) => {
   };
 
   return (
-    <Container className="slide-product">
+    <Container fixed className="slide-product">
       <Carousel
         keyBoardControl={true}
         infinite={true}

@@ -1,11 +1,18 @@
 .sale-product {
   position: absolute;
   top: 50%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: white;
   height: 500px;
   font-family: "Times New Roman", Times, serif;
+
+  &__bg {
+    height: 700px;
+    position: relative;
+    background-color: white;
+  }
+  &__content {
+    position: absolute;
+    top: 80px;
+  }
   .product-description {
     > * {
       margin: 10px 0px;
