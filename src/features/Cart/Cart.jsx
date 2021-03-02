@@ -70,11 +70,7 @@ function Cart() {
         <a href="/product-grid">
           <Button color="black" text="TIẾP TỤC MUA HÀNG" />
         </a>
-        <Button
-          color="black"
-          text="XÓA"
-          onClick={() => localStorage.removeItem("cart")}
-        />
+        <Button color="black" text="ĐẶT HÀNG" />
         <Button color="black" text="CẬP NHẬT" />
       </Row>
     </Container>
