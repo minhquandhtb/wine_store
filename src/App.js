@@ -38,7 +38,7 @@ function App() {
             <Route path="/blog" component={Blog} />
             <Route path="/cart" component={Cart} />
             <Route path="/introduction" component={Introduction} />
-            <Route path="/product-grid" component={ProductShow} />
+            <Route path="/wine_store/product-grid" component={ProductShow} />
             <Route path="/product-list" component={ProductShow} />
             <Route path="/product-detail" component={ProductDetail} />
           </Switch>
