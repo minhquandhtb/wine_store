@@ -3,7 +3,28 @@ import React from "react";
 import logo from "assets/images/brand.png";
 import DropdownMenu from "./DropdownMenu";
 import { Col, Container, Row } from "reactstrap";
+import { HEADER_MENU_ITEM } from "constants/header";
 function Menu() {
+  const headerMenuItem = HEADER_MENU_ITEM.map((e, i) => {
+    if (e.text === "RƯỢU VANG ĐỎ")
+      return (
+        <li className="nav__item" id="dropdown--1">
+          <a className="nav__link" href={e.href}>
+            {e.text}
+          </a>
+          <DropdownMenu />
+        </li>
+      );
+    else
+      return (
+        <li className="nav__item">
+          <a className="nav__link" href={e.href}>
+            {e.text}
+          </a>
+        </li>
+      );
+  });
+
   return (
     <nav class="navbar navbar-main">
       <Container>
@@ -12,44 +33,7 @@ function Menu() {
             <img className="nav__item" src={logo} alt="img" />
           </Col>
           <Col xs="10">
-            <ul className="nav">
-              <li className="nav__item">
-                <a className="nav__link" href="./">
-                  TRANG CHỦ
-                </a>
-              </li>
-              <li className="nav__item" id="dropdown--1">
-                <a className="nav__link" href="wine_store/product-grid">
-                  RƯỢU VANG ĐỎ
-                </a>
-                <DropdownMenu />
-              </li>
-              <li className="nav__item">
-                <a className="nav__link" href="./">
-                  RƯỢU VANG TRẮNG
-                </a>
-              </li>
-              <li className="nav__item">
-                <a className="nav__link" href="./">
-                  CHAMPAGNE
-                </a>
-              </li>
-              <li className="nav__item">
-                <a className="nav__link" href="/introduction">
-                  THÔNG TIN
-                </a>
-              </li>
-              <li className="nav__item">
-                <a className="nav__link" href="/blog">
-                  BLOG
-                </a>
-              </li>
-              <li className="nav__item">
-                <a className="nav__link" href="./">
-                  LIÊN HỆ
-                </a>
-              </li>
-            </ul>
+            <ul className="nav">{headerMenuItem}</ul>
           </Col>
         </Row>
       </Container>

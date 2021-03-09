@@ -16,10 +16,10 @@ function TopBar() {
   return (
     <div className="top-bar">
       <div>
-        <a href="/product-grid">
+        <a href="product-grid">
           <i class="fa fa-th" aria-hidden="true"></i>
         </a>
-        <a href="/product-list">
+        <a href="product-list">
           <i class="fa fa-th-list" aria-hidden="true"></i>
         </a>
       </div>

@@ -30,17 +30,20 @@ function App() {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Redirect exact from="/" to="/home" />
-            <Route path="/wine_store" component={HomePage} />
-            <Route path="/register" component={Register} />
-            <Route path="/login" component={Login} />
-            <Route path="/address" component={Address} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/cart" component={Cart} />
-            <Route path="/introduction" component={Introduction} />
+            <Redirect exact from="/wine_store" to="/wine_store/home" />
+            <Route path="/wine_store/home" component={HomePage} />
+            <Route path="/wine_store/register" component={Register} />
+            <Route path="/wine_store/login" component={Login} />
+            <Route path="/wine_store/address" component={Address} />
+            <Route path="/wine_store/blog" component={Blog} />
+            <Route path="/wine_store/cart" component={Cart} />
+            <Route path="/wine_store/introduction" component={Introduction} />
             <Route path="/wine_store/product-grid" component={ProductShow} />
-            <Route path="/product-list" component={ProductShow} />
-            <Route path="/product-detail" component={ProductDetail} />
+            <Route path="/wine_store/product-list" component={ProductShow} />
+            <Route
+              path="/wine_store/product-detail"
+              component={ProductDetail}
+            />
           </Switch>
           <Footer />
         </BrowserRouter>

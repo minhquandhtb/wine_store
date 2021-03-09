@@ -64,11 +64,11 @@ function ProductShow() {
               <BrowserRouter>
                 <Switch>
                   <Route
-                    path="/product-grid"
+                    path="/wine_store/product-grid"
                     component={() => <ProductGrid products={products} />}
                   />
                   <Route
-                    path="/product-list"
+                    path="/wine_store/product-list"
                     component={() => <ProductList products={products} />}
                   />
                 </Switch>
