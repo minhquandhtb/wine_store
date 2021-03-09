@@ -31,7 +31,7 @@ function App() {
           <Header />
           <Switch>
             <Redirect exact from="/" to="/home" />
-            <Route path="/home" component={HomePage} />
+            <Route path="/wine_store" component={HomePage} />
             <Route path="/register" component={Register} />
             <Route path="/login" component={Login} />
             <Route path="/address" component={Address} />

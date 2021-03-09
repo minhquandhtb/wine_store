@@ -19,7 +19,7 @@ function Menu() {
                 </a>
               </li>
               <li className="nav__item" id="dropdown--1">
-                <a className="nav__link" href="product-grid">
+                <a className="nav__link" href="wine_store/product-grid">
                   RƯỢU VANG ĐỎ
                 </a>
                 <DropdownMenu />
