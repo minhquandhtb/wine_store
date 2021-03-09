@@ -3,14 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 export const productShowSlice = createSlice({
   name: "url",
   initialState: {
-    initialPagination: "http://localhost:4000/products?_page=1&_limit=6",
-    initialSlice: "http://localhost:4000/products?_page=1&_limit=8",
+    initialPagination:
+      "https://my-json-server.typicode.com/minhquandhtb/wine_store/products?_page=1&_limit=6",
+    initialSlice:
+      "https://my-json-server.typicode.com/minhquandhtb/wine_store/products?_page=1&_limit=8",
     initialType: "",
     initialCart: [],
   },
   reducers: {
     setPagination: (state, action) => {
-      state.initialPagination = `http://localhost:4000/products?_page=${action.payload}&_limit=6`;
+      state.initialPagination = `https://my-json-server.typicode.com/minhquandhtb/wine_store/products?_page=${action.payload}&_limit=6`;
     },
     setType: (state, action) => {
       state.initialType = `$&type=${action.payload}`;
